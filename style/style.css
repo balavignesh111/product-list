@@ -11,6 +11,7 @@ html{
 body{
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 h1{
@@ -20,11 +21,17 @@ h1{
 .container{
   width: 100%;
   padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+
 }
 
 .product-card{
   width: 15rem;
   padding: 1rem;
+  border-radius: 15px;
   box-shadow: 0rem 0rem 2px #000;
   display: flex;
   flex-direction: column;
@@ -33,10 +40,30 @@ h1{
 
 .product-image-container{
   width: 13rem;
+  height: 10rem;
+  padding-bottom: 2rem;
 }
 
 .product-image{
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
+}
+
+.input-container{
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.search{
+  width: 13rem;
+  padding: 0.5rem;
+}
+
+.sort-btn,.filter-btn{
+  width: 12rem;
+  padding: 0.5rem;
 }
